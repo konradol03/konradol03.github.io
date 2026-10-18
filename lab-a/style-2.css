@@ -1,3 +1,130 @@
 body {
-  background-color: #ecfbe6;
+  margin: 0;
+  background-color: #000000;
+  color: #f0f0f0;
+  font-family: Verdana, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 5%;
+  /*wygenerowane z strony https://cssgradient.io/*/
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 24%, rgba(163, 230, 53, 1) 100%);
+}
+h1 {
+  margin: 0;
+  color: #e3e3e3;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  display: block;
+  padding: 8px;
+  font-size: 13px;
+  color: #000000;
+  background-color: #a3e635;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+section {
+  min-width: 0;
+  padding: 24px;
+  background-color: #202020;
+  border: 2px solid #476a32;
+  border-radius: 20px;
+}
+section > p {
+  text-transform: uppercase;
+}
+section h2 {
+  margin-top: 0;
+  padding: 12px;
+  color: #101010;
+  background-color: #a3e635;
+  border-radius: 10px;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section h3 {
+  padding-left: 12px;
+  color: #a3e635;
+  font-size: 18px;
+  border-left: 5px solid #a3e635;
+}
+section p {
+  color: #e3e3e3;
+  font-size: 20px;
+  text-align: left;
+}
+section ul {
+  list-style: none;
+  padding: 0;
+}
+section li {
+  border-bottom: 1px solid #a3e635;
+  padding: 8px;
+}
+footer {
+  color: #101010;
+  background-color: #a3e635;
+  text-align: right;
+  font-weight: bold;
+}
+footer p {
+  margin: 0;
+}
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  article {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  nav a {
+    padding: 8px 10px;
+  }
+  main {
+    padding: 20px 12px;
+  }
+  section {
+    padding: 18px;
+  }
+  section h2 {
+    font-size: 19px;
+  }
+  footer {
+    text-align: center;
+  }
 }
