@@ -10,5 +10,8 @@ trim_trailing_whitespace = true
 [*.css]
 indent_size = 2
 
+[*.js]
+indent_size = 2
+
 [*.html]
 indent_size = 4
