@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: #0479ed;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.search-list, #todo-list, #add-task {
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-list input {
+  width: 97%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+button {
+  padding: 10px;
+  color: white;
+}
+.task button {
+  background-color: #dc2626;
+}
+#add-task {
+  display: flex;
+  gap: 10px;
+}
+#add-task button {
+  background-color: #16a34a;
+}
