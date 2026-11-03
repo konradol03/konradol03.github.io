@@ -80,7 +80,7 @@ function dragAndDrop() {
       this.style.opacity = 0.5;
       event.dataTransfer.setData("text",this.id);
     });
-    item.addEventListener("dragover", function (event){
+    item.addEventListener("dragend", function (event){
       this.style.opacity=1;
     })
   }
