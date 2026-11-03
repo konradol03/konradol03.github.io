@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Konrad Ołdakowski (55821) - AI LAB C</title>
-
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="leaflet-1.9.4/leaflet.css" />
+    <script src="leaflet-1.9.4/leaflet-src.js"></script>
+    <script src="leaflet-1.9.4/leaflet-providers.js"></script>
+    <script src="leaflet-1.9.4/leaflet-image.js"></script>
     <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
+    <div class="map-container">
+    <div id="map"></div>
+    <div class="pattern-container">
+        <canvas id="puzzlePattern"></canvas>
+    </div>
+    </div>
+    <button id="getLocation">Moja lokalizacja</button>
+    <button id="saveButton">Pobierz mape</button>
+    <div id ="positionInfo">
+        <strong>Szerokość geograficza:</strong> <span id ="latitude"></span><br>
+        <strong>Długość geograficzna:</strong> <span id="longitude"></span><br>
+    </div>
 
+    <div class="puzzle-container">
+        <div id="puzzlePieces"></div>
+        <div id="puzzleBoard"></div>
+    </div>
 </body>
 </html>
