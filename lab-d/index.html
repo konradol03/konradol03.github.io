@@ -8,9 +8,21 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div id="search-bar">
-        <input id="searchInput" type="text">
+    <header>
+    <h1>Pogodynka</h1>
+    <p>Prognoza pogody w wybranym mieście</p>
+    </header>
+    <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Wpisz miasto" required>
         <button type="submit">Pogoda</button>
-    </div>
+    </form>
+    <section id="currentWeather">
+        <h2>Aktualna pogoda</h2>
+            <div id="currentResult"></div>
+    </section>
+    <section id="forecastWeather">
+        <h2>Prognoza pogody na 5 dni</h2>
+        <div id="forecastResult"></div>
+    </section>
 </body>
 </html>
